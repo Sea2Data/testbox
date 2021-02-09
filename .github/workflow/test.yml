@@ -1,0 +1,17 @@
+on:
+  push:
+    branches:
+      - develop
+
+name: test
+
+jobs:
+    test:
+        runs-on: windows-latest
+        
+        name: test job
+        
+        steps:
+          - name: test step
+          run: |            
+             echo test
